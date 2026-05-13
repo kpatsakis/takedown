@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ACM Workshop on Technical Analysis and Knowledge Exchange on Disrupting Online Criminal Networks (TAKEDOWN) 2026</title>
+  <meta name="description" content="TAKEDOWN: Technical Analysis and Knowledge Exchange on Disrupting Online Criminal Networks. A workshop colocated with ACM CCS.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark container">
+    <a href="#top" class="navbar-brand me-2">
+      <strong>TAKEDOWN</strong>
+      <span class="badge rounded-pill ms-2">Workshop @ ACM CCS</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <div class="navbar-nav ms-auto">
+        <a href="#scope" class="nav-link">Scope</a>
+        <a href="#topics" class="nav-link">Topics</a>
+        <a href="#dates" class="nav-link">Dates</a>
+        <a href="#submissions" class="nav-link">Submissions</a>
+        <a href="#committee" class="nav-link">Committee</a>
+        <a href="https://www.sigsac.org/ccs/CCS2026/" class="nav-link">ACM CCS</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="top" class="hero">
+  <div class="container">
+    <div class="hero-body">
+      <h1>TAKEDOWN</h1>
+      <p class="lead">
+        Technical Analysis and Knowledge Exchange on Disrupting Online Criminal Networks
+      </p>
+      <p class="text-gray">
+      November 15-19, 2026.<br>
+      <i class="fa fa-map-marker" aria-hidden="true"> </i> The Hague, The Netherlands. The World Forum, <br>
+Colocated with the ACM Conference on Computer and Communications Security (CCS).
+      </p>
+      <div class="hero-actions">
+        <a href="#scope" class="btn btn-primary">Read the Call for Papers</a>
+        <a href="#submissions" class="btn">Submission Info</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container main-content">
+
+  <section id="scope" class="content-section">
+    <h2>Scope</h2>
+    <p>
+      Cybercrime has increasingly evolved into <strong>Crime-as-a-Service (CaaS)</strong> ecosystems,
+      where specialized actors provide tools, infrastructure, and services that lower barriers to entry
+      and enable both purely digital and cyber-assisted physical crime. These developments demand security
+      research that goes beyond malware analysis to include detection pipelines, adversarial marketplaces,
+      and a human-centered understanding of cybercriminal behavior.
+    </p>
+    <p>
+      The TAKEDOWN Workshop seeks to bring together researchers and practitioners studying the
+      <strong>technical, behavioral, and systemic</strong> dimensions of cybercrime, with particular
+      emphasis on detecting and disrupting service-based criminal ecosystems and the human actors who
+      operate them.
+    </p>
+    <p>
+      We invite submissions across three categories: full papers, short papers (including position papers and experience reports), and dataset papers, covering original research, work-in-progress, and novel datasets.
+    </p>
+  </section>
+
+  <section id="topics" class="content-section">
+    <h2>Topics of Interest</h2>
+    <p class="text-gray">
+      Topics include, but are not limited to, the following areas.
+    </p>
+
+    <div class="row g-3 topics-grid">
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Crime-as-a-Service Ecosystems</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Measurement and modeling of CaaS markets (phishing-, ransomware-, access-as-a-service)</li>
+              <li>Roles, specialization, and trust mechanisms in underground services</li>
+              <li>Automation and commodification of cybercrime</li>
+              <li>Interdependencies between service providers and downstream criminal activity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Bulletproof Hosting &amp; Resilient Services</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Detection and attribution of bulletproof hosting providers</li>
+              <li>Hosting migration patterns and infrastructure resilience</li>
+              <li>Relationships between bulletproof hosts and downstream criminal services</li>
+              <li>Economic models and pricing structures of abuse-tolerant hosting</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Detection and Technical Countermeasures</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Detection of scams, phishing, fraud, and malware delivery infrastructure</li>
+              <li>Network-, system-, and platform-level detection of cybercriminal services</li>
+              <li>Tracking bulletproof hosting via passive and active measurement</li>
+              <li>AS-level and BGP-based detection of malicious infrastructure</li>
+              <li>ML- and AI-based detection under adversarial conditions</li>
+              <li>Early-warning systems for emerging cybercrime campaigns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Human and Behavioral Aspects</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Profiling and behavioral analysis of cybercriminals</li>
+              <li>Incentive structures, reputation, and decision-making in underground markets</li>
+              <li>Socio-technical analysis of cybercriminal communities</li>
+              <li>Human factors in attacker / defender dynamics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Cyber-Assisted and Hybrid Crime</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Technical mechanisms enabling cyber-assisted physical crime</li>
+              <li>Online facilitation of fraud, extortion, trafficking, and financial crime</li>
+              <li>Linking online criminal infrastructure to offline harms</li>
+              <li>Detection and mitigation of hybrid cyber-physical activity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Disruption, Intervention, and Impact</div>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Technical approaches to disrupting CaaS supply chains</li>
+              <li>Measuring real-world impact of takedowns and interventions</li>
+              <li>Infrastructure resilience and criminal adaptation post-disruption</li>
+              <li>Case studies from industry, ISPs, platforms, and CERTs</li>
+              <li>Legal, ethical, and operational constraints on countermeasures</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="note-callout mt-2">
+      Submissions should clearly articulate how the work contributes to detecting, understanding, or
+      disrupting cybercrime ecosystems, with an emphasis on real-world impact.
+    </div>
+    <h4>Submission guidelines</h4>
+    <p>Papers that do not comply with the following requirements will be <strong>desk-rejected</strong>.
+      <ul>
+      <li>Submissions must be written in English.</li>
+      <li>All submissions must be received by 11:59 PM AoE (UTC-12) on the day of the corresponding deadline.</li>
+      <li>Submitted papers must not substantially overlap with papers that have been published or accepted for publication, or
+      that are
+      simultaneously in submission to a journal, conference, or workshop with published proceedings. All submissions should be
+      properly anonymized. Papers should avoid revealing authors' identity in the text. When referring to their previous work,
+      authors are required to cite their papers in the third person, without identifying themselves. In the unusual case in
+      which a third-person reference is infeasible, authors can blind the reference itself. Papers not properly anonymized may
+      be rejected without review.</li>
+      <li>All articles must respect the page limits of the corresponding category (full, short, and dataset) excluding references
+      and clearly labeled
+      appendices, with an absolute maximum length of 12 pages. Reviewers are not obligated to read appendices, so the main
+      paper should remain self-contained and understandable without them.</li>
+      <li>Submissions must be provided in PDF format and adhere strictly to the ACM formatting guidelines. Authors should follow
+      the main ACM CCS'26 formatting instructions, except for the page limits specified above. Moreover, all submissions must
+      comply with the "Use of Generative AI" policy described in the main page of <a
+        href="https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html">CCS</a>.</li>
+      <li>At least one author of each accepted paper must attend the workshop and present the work in order for the paper to appear in the proceedings.</li>
+      </ul>
+  </section>
+
+  <section id="ethics" class="content-section">
+    <h2>Ethical Considerations</h2>
+    <p>All papers must contain an Ethical Considerations appendix that follows the requirements laid out in the CCS Submission Policies and Instructions. For more details you may refer to the corresponding part of the <a href="https://www.sigsac.org/ccs/CCS2026/call-for/call-for-papers.html">CCS Call for Papers</a>.</p>
+  </section>
+
+  <section id="dates" class="content-section">
+    <h2>Important Dates</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="date-card">
+          <div class="date-label">Paper Submission Deadline</div>
+          <div class="date-value">July 13th, 2026</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="date-card">
+          <div class="date-label">Notification to Authors</div>
+          <div class="date-value">September 1st, 2026</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="date-card">
+          <div class="date-label">Camera-ready deadline</div>
+          <div class="date-value">September 17th, 2026</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="date-card date-card--accent">
+          <div class="date-label">Workshop Date</div>
+          <div class="date-value">TBD</div>
+          <div class="date-note">Colocated with ACM CCS 2026</div>
+        </div>
+      </div>
+    </div>
+    <p class="text-gray mt-2"><strong>All deadlines are Anywhere on Earth (AoE).</strong></p>
+  </section>
+
+  <section id="submissions" class="content-section">
+    <h2>Submissions</h2>
+
+    <div class="row g-3">
+      <div class="col-md-4">
+        <div class="card submission-card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Full Papers</div>
+          </div>
+          <div class="card-body">
+            Mature research results
+            <span class="badge">8&ndash;10 pages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card submission-card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Short Papers</div>
+          </div>
+          <div class="card-body">
+            Work-in-progress, tools, preliminary findings, position papers, and experience reports <span class="badge">4&ndash;6 pages</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card submission-card h-100">
+          <div class="card-header">
+            <div class="card-title h5">Dataset Papers</div>
+          </div>
+          <div class="card-body">
+            Novel datasets with availability commitments
+            <span class="badge">4&ndash;6 pages</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class="mt-2">Submission Site</h4>
+    <p>Submission link: <a href="https://takedown26.hotcrp.com/">https://takedown26.hotcrp.com/</a> (pending)</p>
+
+    <h4 class="mt-2">Review Process</h4>
+    <p>
+      The workshop follows a <strong>double-blind</strong> review process with at least
+      <strong>3 reviews per submission</strong>. Conflicts of interest are declared and managed via
+      <strong>HotCRP</strong>. All accepted papers will be published in the
+      <strong>ACM CCS workshops&rsquo; proceedings</strong>.
+    </p>
+  </section>
+
+  <section id="committee" class="content-section">
+    <h2>Committee</h2>
+
+    <h4>Program Chairs</h4>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="tile">
+          <div class="tile-content">
+            <p class="tile-title">Constantinos Patsakis</p>
+            <p class="tile-subtitle text-gray">University of Piraeus, Greece</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="tile">
+          <div class="tile-content">
+            <p class="tile-title">George Smaragdakis</p>
+            <p class="tile-subtitle text-gray">Delft University of Technology, Netherlands</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mt-2">Program Committee</h4>
+    <div class="row g-2 pc-grid">
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Ioannis Agrafiotis</p>
+            <p class="tile-subtitle text-gray">Oxford University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">David Arroyo</p>
+            <p class="tile-subtitle text-gray">Spanish National Research Council</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Alastair Beresford</p>
+            <p class="tile-subtitle text-gray">University of Cambridge</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Juan Caballero</p>
+            <p class="tile-subtitle text-gray">IMDEA Software Institute</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Yi Ting Chua</p>
+            <p class="tile-subtitle text-gray">University of Tulsa</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Harm Griffioen</p>
+            <p class="tile-subtitle text-gray">Delft University of Technology</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Alice Hutchings</p>
+            <p class="tile-subtitle text-gray">University of Cambridge</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Vasilios Katos</p>
+            <p class="tile-subtitle text-gray">Bournemouth University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Tobias Mattes</p>
+            <p class="tile-subtitle text-gray">Bavarian State Police</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Shujun Li</p>
+            <p class="tile-subtitle text-gray">Kent University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Juha Nurmi</p>
+            <p class="tile-subtitle text-gray">Tampere University</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Raul Orduna</p>
+            <p class="tile-subtitle text-gray">Vicomtech</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">George Stergiopoulos</p>
+            <p class="tile-subtitle text-gray">Athens University of Economics and Business</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="tile compact">
+          <div class="tile-content">
+            <p class="tile-title">Francesco Zola</p>
+            <p class="tile-subtitle text-gray">Vicomtech</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          <strong>TAKEDOWN Workshop</strong>
+        </p>
+      </div>
+      <div class="col-md-4 text-md-end">
+        <p class="text-gray">Copyright TAKEDOWN @ 2026</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

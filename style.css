@@ -1,0 +1,344 @@
+/*
+ * TAKEDOWN Workshop
+ *
+ * Palette: colorhunt.co/palette/222831393e4600adb5eeeeee
+ *   #222831  deep charcoal  — darkest surfaces / header bg
+ *   #393e46  dark slate     — secondary surfaces / footer
+ *   #00adb5  teal           — primary accent (links, CTAs, underlines)
+ *   #eeeeee  off-white      — page background / text on dark
+ */
+
+:root {
+  --ch-charcoal:   #222831;
+  --ch-slate:      #393e46;
+  --ch-teal:       #00adb5;
+  --ch-teal-deep:  #007f86;   /* hover/active teal */
+  --ch-light:      #eeeeee;
+  --ch-white:      #f5f5f5;   /* page background (slightly warmer than #eee) */
+  --ch-ink:        #222831;   /* body text */
+  --ch-ink-soft:   #6b7280;   /* muted labels */
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ch-white);
+  color: var(--ch-ink);
+  font-family: 'K2D', sans-serif;
+  font-size: 1.0625rem;
+}
+
+.container {
+  max-width: 960px !important;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ch-charcoal);
+  font-family: 'K2D', sans-serif;
+}
+
+a {
+  color: var(--ch-teal);
+}
+
+a:hover, a:focus, a:active {
+  color: var(--ch-teal-deep);
+}
+
+strong {
+  color: var(--ch-charcoal);
+}
+
+/* Buttons — primary (teal filled) via Bootstrap 5 custom properties */
+.btn-primary {
+  --bs-btn-bg: var(--ch-teal);
+  --bs-btn-border-color: var(--ch-teal);
+  --bs-btn-hover-bg: var(--ch-teal-deep);
+  --bs-btn-hover-border-color: var(--ch-teal-deep);
+  --bs-btn-active-bg: var(--ch-teal-deep);
+  --bs-btn-active-border-color: var(--ch-teal-deep);
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-active-color: #fff;
+  --bs-btn-focus-shadow-rgb: 0, 173, 181;
+}
+
+/* Outline button — only used inside the hero (dark bg) */
+.hero .btn:not(.btn-primary) {
+  border-color: #fff;
+  color: #fff;
+  background: transparent;
+}
+.hero .btn:not(.btn-primary):hover,
+.hero .btn:not(.btn-primary):focus {
+  border-color: var(--ch-teal);
+  color: var(--ch-teal);
+  background: rgba(255,255,255,0.08);
+}
+
+/* Nav links — scoped to the dark header */
+.site-header .nav-link {
+  color: #fff !important;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link:focus {
+  color: var(--ch-teal) !important;
+}
+
+/* ── Header ── */
+.site-header {
+  padding: 0.45rem 0;
+  background: var(--ch-charcoal);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.site-header .navbar-brand {
+  font-size: 1.26rem;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-header .navbar-brand strong {
+  color: var(--ch-teal);
+}
+
+.site-header .badge {
+  background: var(--ch-teal) !important;
+  color: #fff;
+  font-size: 0.65rem;
+  letter-spacing: 0.03em;
+}
+
+/* ── Hero ─── */
+.hero {
+  padding: 4.8rem 0 3.6rem;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 4px solid var(--ch-teal);
+  background:
+    radial-gradient(ellipse at 82% 25%, rgba(0,173,181,0.32) 0%, transparent 52%),
+    radial-gradient(ellipse at 8%  85%, rgba(0,173,181,0.13) 0%, transparent 38%),
+    linear-gradient(155deg, #181e27 0%, var(--ch-charcoal) 40%, var(--ch-slate) 100%);
+}
+
+/* subtle dot-grid overlay — gives a technical/network feel */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(0,173,181,0.18) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.hero .lead {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  color: var(--ch-light);
+}
+
+.hero .text-gray {
+  color: #9ca3af !important;
+}
+
+.hero-actions {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ── Main sections ── */
+.main-content {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.content-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--ch-light);
+}
+
+.content-section:last-of-type {
+  border-bottom: 0;
+}
+
+.content-section h2 {
+  margin-bottom: 1rem;
+}
+
+.content-section h2::after {
+  content: "";
+  display: block;
+  width: 2.8rem;
+  height: 3px;
+  background: var(--ch-teal);
+  margin-top: 0.4rem;
+}
+
+.content-section h4 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: var(--ch-slate);
+}
+
+/* ── Cards ── */
+.card {
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  transition: box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 14px rgba(0, 173, 181, 0.12);
+}
+
+.card .card-header {
+  background: var(--ch-charcoal);
+  border-bottom: none;
+}
+
+.card .card-title {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.card .card-subtitle {
+  color: var(--ch-light) !important;
+}
+
+.topics-grid .card .card-body ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.topics-grid .card .card-body li {
+  margin-bottom: 0.25rem;
+}
+
+/* ── Badges (page-count chips in submission cards) ── */
+.submission-card .badge {
+  background: var(--ch-teal);
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ── Important Dates ── */
+.date-card {
+  border: 1px solid #d9d9d9;
+  border-top: 3px solid var(--ch-slate);
+  border-radius: 0.2rem;
+  background: #fff;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.date-card--accent {
+  border-top-color: var(--ch-teal);
+}
+
+.date-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ch-ink-soft);
+  margin-bottom: 0.35rem;
+}
+
+.date-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--ch-charcoal);
+}
+
+.date-note {
+  font-size: 0.72rem;
+  color: var(--ch-ink-soft);
+  margin-top: 0.25rem;
+}
+
+/* ── Note callout (formerly .toast) ── */
+.note-callout {
+  background: #e6f9fa;
+  border: 1px solid var(--ch-teal);
+  color: var(--ch-charcoal);
+  padding: 0.8rem 1rem;
+  border-radius: 0.2rem;
+}
+
+/* ── Tiles (chairs / PC members) ── */
+.tile {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d9d9d9;
+  border-left: 3px solid var(--ch-teal);
+  border-radius: 0.2rem;
+  margin-bottom: 0.5rem;
+  background: #fff;
+}
+
+.tile.compact {
+  padding: 0.5rem 0.7rem;
+  border-left-color: var(--ch-slate);
+}
+
+.tile .tile-title {
+  margin: 0;
+  font-weight: 600;
+  color: var(--ch-charcoal);
+}
+
+.tile .tile-subtitle {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--ch-ink-soft) !important;
+}
+
+/* ── Footer ── */
+.site-footer {
+  background: var(--ch-slate);
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--ch-light);
+}
+
+.site-footer p,
+.site-footer strong {
+  color: var(--ch-light);
+}
+
+.site-footer .text-gray {
+  color: #9ca3af !important;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.64rem 0 1.92rem;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .site-header .badge {
+    display: none;
+  }
+}
